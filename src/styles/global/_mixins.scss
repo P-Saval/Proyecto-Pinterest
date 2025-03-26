@@ -1,0 +1,13 @@
+@mixin flex ($jc, $ai, $dir,$gp) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-direction: $dir;
+    gap: $gp;
+}
+
+@mixin mobile {
+    @media screen and (max-width: 585px) {
+        @content;
+    }
+}

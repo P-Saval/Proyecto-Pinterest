@@ -1,0 +1,11 @@
+.search{
+    @extend %primaryButton;
+    background-color: rgb(225, 224, 224);
+    background-image: url(/assets/001-magnifying-glass.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 1%;
+    width: 65%;
+    padding-left: 50px;
+    
+}

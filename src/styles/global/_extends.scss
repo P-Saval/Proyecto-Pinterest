@@ -1,0 +1,27 @@
+%primaryButton {
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 18px;
+    background-color: white;
+    font-size: 16px;
+    font-family: "Atma", system-ui;
+    font-weight: 500;
+}
+
+%photoButtons {
+    height: 45px;
+    width: 45px;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(229, 227, 227);
+    color: black;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: top;
+    position: absolute;
+    top: 5px;
+}

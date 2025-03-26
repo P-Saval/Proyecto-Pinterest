@@ -1,0 +1,25 @@
+.divIcons{
+    @include flex(center, center, row, 10px)
+}
+
+.bellIcon{
+   content: url(/assets/bell.png);
+   height: 40px;
+   width: 40px;
+   cursor: pointer;
+}
+
+.chatIcon{
+    content: url(/assets/chat-bubble.png);
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.userIcon{
+    content: url(/assets/user.png);
+    height: 30px;
+    width: 30px;
+    margin-left: 15px;
+    cursor: pointer;
+}

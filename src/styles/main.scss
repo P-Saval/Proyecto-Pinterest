@@ -1,0 +1,22 @@
+@import "./layouts/home";
+@import "/src/styles/global/extends";
+@import "/src/styles/global/mixins";
+@import "/src/styles/global/variables";
+@import "/src/styles/components/button";
+@import "/src/styles/components/input";
+@import "/src/styles/components/icons";
+@import "/src/styles/components/card";
+@import "/src/styles/components/header";
+@import "/src/styles/components/gallery";
+
+@import url('https://fonts.googleapis.com/css2?family=Atma:wght@500&display=swap');
+
+
+
+:root{
+    height: 100svh;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Atma", system-ui;
+}

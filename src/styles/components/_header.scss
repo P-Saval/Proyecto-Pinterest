@@ -1,0 +1,33 @@
+header {
+    @include flex (start, center, row, 0px);
+    width: 100%;
+    img {
+        height: 30px;
+        width: 30px;
+        cursor: pointer;
+    }
+    .divButtons {
+        display: flex;
+        gap: 12px;
+        margin: 0;
+    }
+    
+    .divIcons{
+        display: flex;
+        gap: 15px;
+    }
+
+    @include mobile{
+        .divButtons{
+            display: none;
+        }
+        .divIcons{
+            display: none;
+        }
+        .search{
+            width: 80%;
+        }
+        
+    }
+}
+
