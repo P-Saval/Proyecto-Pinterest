@@ -1,0 +1,16 @@
+.gallery{
+height: 100%;
+width: 100%;
+gap: 15px;
+columns: 260px 5;
+margin-top: 10px;
+
+
+
+
+@include mobile {
+    grid-template-columns: 1fr 1fr;
+}
+
+
+}

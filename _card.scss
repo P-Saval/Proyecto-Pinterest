@@ -1,0 +1,94 @@
+
+.card{
+    @include flex (start, center, column, 5px);
+    width: 100%;
+    height:fit-content;
+    overflow: hidden;
+    
+    
+    .photo{
+        display: flex;
+        position: relative;
+        
+        .mainImg{
+            object-fit: contain;
+            object-position: center;
+            max-width: 275px;
+            max-height: 430px;
+            height: auto;
+            border-radius: 15px;
+        }
+
+        .photoButton{
+            @extend %photoButtons;
+            background-image: url(/assets/photo-camera-interface-symbol-for-button.png);
+            left: 5px;
+        }
+        .likeButton{
+            @extend %photoButtons;
+            background-image: url(/assets/heart.png);
+            right: 5px;
+        }
+        .visitButton{
+            height: 50px;
+            width: 100px;
+            border-radius: 50px;
+            border: none;
+            background-color: red;
+            color: white;
+            font-size: large;
+            font-weight: bold;
+            position: absolute;
+            top: 35%;
+            right: 30%;
+            cursor: pointer;
+        }
+        button{
+            visibility: hidden;
+        }
+    }
+    .photo:hover{
+        button{
+            visibility: visible;
+        }}
+    
+    .profile{
+            @include flex (center, center, column, 0px);
+            position: relative;
+            bottom: 60px;
+            
+            img {
+                border-radius: 50px;
+                border: solid 6px red;
+                height: 80px;
+                width: 80px;
+                object-fit: contain;
+                
+            }
+            h2, h3{
+                font-size: medium;
+                font-weight: 400;
+                margin-block: 0.2em;
+            }
+        }
+
+    
+   @include mobile {
+    .mainImg{
+        width: 180px;
+        min-height: 220px;
+    }
+    .photo:hover{
+        .visitButton{
+            right: 20%;
+        }
+    }
+
+
+
+   }
+    
+
+}
+
+
